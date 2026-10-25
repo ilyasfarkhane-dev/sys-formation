@@ -1,0 +1,28 @@
+{
+  "name": "centreflow-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db:init": "node scripts/init.js",
+    "db:seed": "node scripts/seed.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.24",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.15.3",
+    "pdfkit": "^0.20.2",
+    "pino": "^9.14.0",
+    "qrcode": "^1.5.4",
+    "zod": "^4.1.12"
+  }
+}
